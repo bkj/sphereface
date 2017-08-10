@@ -12,8 +12,8 @@ layer {
     mirror: true
   }
   image_data_param {
-    source: "data/CASIA-WebFace-112X96.txt"
-    batch_size: 128
+    source: "data/casia.txt"
+    batch_size: 240
     shuffle: true
   }
 }
@@ -1118,7 +1118,7 @@ layer {
     decay_mult: 1
   }
   margin_inner_product_param {
-    num_output: 10572
+    num_output: 10576
     type: QUADRUPLE
     weight_filler {
       type: "xavier"
